@@ -113,7 +113,7 @@ export function SideBar(props: { className?: string }) {
   useHotKey();
 
   return (
-    <div style={{ width: 0 }}
+    <div style={{ display: none }}
       className={`${styles.sidebar} ${props.className} ${
         shouldNarrow && styles["narrow-sidebar"]
       }`}

@@ -328,7 +328,7 @@ export function ChatActions(props: {
   const stopAll = () => ChatControllerPool.stopAll();
 
   return (
-    <div style={{ height: 0 }} className={chatStyle["chat-input-actions"]}>
+    <div style={{ display: "none" }} className={chatStyle["chat-input-actions"]}>
       {couldStop && (
         <div
           className={`${chatStyle["chat-input-action"]} clickable`}
@@ -668,7 +668,7 @@ export function Chat() {
   });
 
   return (
-    <div style={{ width: 0 }} className={styles.chat} key={session.id}>
+    <div style={{ display: "none" }} className={styles.chat} key={session.id}>
       <div className="window-header">
         <div className="window-header-title">
           <div

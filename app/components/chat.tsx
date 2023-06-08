@@ -669,7 +669,7 @@ export function Chat() {
 
   return (
     <div  className={styles.chat} key={session.id}>
-      <div style={{ height: 0  }} className="window-header">
+      <div   style={{ display: "none"  }} className="window-header">
         <div className="window-header-title">
           <div
             className={`window-header-main-title " ${styles["chat-body-title"]}`}
@@ -682,7 +682,7 @@ export function Chat() {
           </div>
         </div>
         <div className="window-actions">
-          <div className={"window-action-button" + " " + styles.mobile}>
+          <div  className={"window-action-button" + " " + styles.mobile}>
             <IconButton
               icon={<ReturnIcon />}
               bordered
